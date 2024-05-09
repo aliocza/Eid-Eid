@@ -12,8 +12,8 @@
     <Reference Include="System.Security" Condition=" '$(TargetFramework)' == 'net48' " />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\vendor\Pkcs11Interop-master\src\Pkcs11Interop\Pkcs11Interop.csproj" />
-    <ProjectReference Include="..\Bridge\Bridge.csproj" />
+    <ProjectReference Include=".\vendor\Pkcs11Interop\src\Pkcs11Interop\Pkcs11Interop.csproj" />
+    <ProjectReference Include=".\vendor\Bridge\Bridge.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="Properties\Settings.settings">

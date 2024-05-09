@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eid", "Eid.csproj", "{FDDC9F48-7B42-44CA-8226-C0F7C1304E18}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pkcs11Interop", "..\..\vendor\Pkcs11Interop-master\src\Pkcs11Interop\Pkcs11Interop.csproj", "{469EE3C0-2E11-4764-B7AE-B5D8632CFE88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pkcs11Interop", ".\vendor\Pkcs11Interop\src\Pkcs11Interop\Pkcs11Interop.csproj", "{469EE3C0-2E11-4764-B7AE-B5D8632CFE88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
