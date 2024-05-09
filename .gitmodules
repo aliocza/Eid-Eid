@@ -1,0 +1,6 @@
+[submodule "vendor/Pkcs11Interop"]
+	path = vendor/Pkcs11Interop
+	url = https://github.com/aliocza/Eid-Pkcs11Interop.git
+[submodule "vendor/Bridge"]
+	path = vendor/Bridge
+	url = https://github.com/aliocza/Eid-Bridge.git
