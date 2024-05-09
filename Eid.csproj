@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net7.0;</TargetFrameworks>
+	  	<RuntimeIdentifiers>win-x64;linux-x64;osx.10.14-x64</RuntimeIdentifiers>
+  </PropertyGroup>
+
+
+
+  <ItemGroup>
+    <Reference Include="System.Security" Condition=" '$(TargetFramework)' == 'net48' " />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\vendor\Pkcs11Interop-master\src\Pkcs11Interop\Pkcs11Interop.csproj" />
+    <ProjectReference Include="..\Bridge\Bridge.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
