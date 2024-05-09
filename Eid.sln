@@ -5,7 +5,9 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eid", "Eid.csproj", "{FDDC9F48-7B42-44CA-8226-C0F7C1304E18}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pkcs11Interop", ".\vendor\Pkcs11Interop\src\Pkcs11Interop\Pkcs11Interop.csproj", "{469EE3C0-2E11-4764-B7AE-B5D8632CFE88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pkcs11Interop", "vendor\Pkcs11Interop\src\Pkcs11Interop\Pkcs11Interop.csproj", "{469EE3C0-2E11-4764-B7AE-B5D8632CFE88}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge", "vendor\Bridge\Bridge.csproj", "{E9789D39-230E-4482-A533-DB65017DCA54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{469EE3C0-2E11-4764-B7AE-B5D8632CFE88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{469EE3C0-2E11-4764-B7AE-B5D8632CFE88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{469EE3C0-2E11-4764-B7AE-B5D8632CFE88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9789D39-230E-4482-A533-DB65017DCA54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9789D39-230E-4482-A533-DB65017DCA54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9789D39-230E-4482-A533-DB65017DCA54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9789D39-230E-4482-A533-DB65017DCA54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

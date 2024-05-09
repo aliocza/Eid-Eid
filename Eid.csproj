@@ -5,6 +5,11 @@
     <TargetFrameworks>net7.0;</TargetFrameworks>
 	  	<RuntimeIdentifiers>win-x64;linux-x64;osx.10.14-x64</RuntimeIdentifiers>
   </PropertyGroup>
+  
+<ItemGroup>
+  <Compile Remove="vendor\**" />
+  <None Include="vendor\**" />
+</ItemGroup>
 
 
 
