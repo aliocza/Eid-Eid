@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using System;
 using System.Threading;
+using Eid.Service;
+using Eid.Controller;
 
 namespace Eid
 {
@@ -12,9 +14,11 @@ namespace Eid
         static void Main(string[] args)
         {
 
+            ErrorHandler errorHandler = new ErrorHandler();
+            errorHandler.Subscribe();
+
             try {
-                EidData data = new EidData();
-                foreach (KeyValuePair<String, String> kvp in data.GetAllValues())
+                foreach (KeyValuePair<String, String> kvp in ReadEidController.GetEid())
                 {
                     Console.WriteLine("Key = {0}, Value = {1}", kvp.Key, kvp.Value);
                 }

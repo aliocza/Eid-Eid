@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Eid.Service;
+using Eid.Utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,24 +22,23 @@ namespace Eid.Controller
 
         public static Dictionary<string, string> GetEid(String smartCardName, List<String> labels)
         {
-            /*try
-            {*/
-            EidData data = new EidData(smartCardName);
-            if (labels == null || labels.Count == 0)
+            try
             {
-                return data.GetAllValues();
+                EidService data = new EidService(smartCardName);
+                if (labels == null || labels.Count == 0)
+                {
+                    return data.GetAllValues();
+                }
+                else
+                {
+                    return data.GetValues(labels);
+                }
             }
-            else
-            {
-                return data.GetValues(labels);
-            }
-
-
-            /* }
-             catch (Exception e)
+            catch (Exception e)
              {
-                 throw new Exception(e.Message);
-             }*/
+                new EventManager().RaiseErrorOccurred(ErrorCode.Code.UNKNOW, e.Message.ToString());
+                return null;
+            }
         }
 
     }
